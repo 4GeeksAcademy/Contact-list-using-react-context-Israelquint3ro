@@ -1,0 +1,33 @@
+.contact{
+
+    display:flex;
+    align-items:center;
+  gap: 20px;
+}
+
+.imagen{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.card{
+    width: 60%;
+    height: 225px;
+  justify-content: space-between;
+ 
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.botons{
+    text-align: right;
+    justify-content: start;
+}
