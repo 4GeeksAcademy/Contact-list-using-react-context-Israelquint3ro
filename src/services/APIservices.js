@@ -50,6 +50,9 @@ export const deleteContact = async (contact, dispatch) => {
     const response = await fetch(`https://playground.4geeks.com/contact/agendas/Israel/contacts/${contact.id}`, {
         method: 'DELETE'
     })
+    if(response.ok){
+        alert("Your contact has been succesfully deleted.")
+    }
     console.log();
     dispatch({ type: 'delete_contacts', payload: contact.id })
 
@@ -57,7 +60,7 @@ export const deleteContact = async (contact, dispatch) => {
 }
 
 export const updateContact = async(contact,dispatch,navigate) => {
-    const response = await fetch (`https://playground.4geeks.com/agendas/Israel/contacts/${contact.id}`,{
+    const response = await fetch (`https://playground.4geeks.com/contact/agendas/Israel/contacts/${contact.id}`,{
           method: 'PUT',
           body: JSON.stringify(contact),
           headers: {"Content-type": "application/json"}

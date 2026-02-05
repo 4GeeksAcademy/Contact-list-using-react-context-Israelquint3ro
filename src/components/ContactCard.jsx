@@ -5,7 +5,7 @@ import useGlobalReducer from "../hooks/useGlobalReducer";
 export const ContactCard = ({ contact }) => {
     const navigate = useNavigate();
     const {store,dispatch} = useGlobalReducer()
-
+    
 
       const handleSubmit = async (e)=>{
           e.preventDefault();
@@ -45,6 +45,7 @@ export const ContactCard = ({ contact }) => {
                         className="btn"
                         onClick={() => deleteContact(contact,dispatch)}><i className="fa-solid fa-trash"></i>
                     </button>
+                    
                 </div>
 
             </div>

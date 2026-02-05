@@ -27,8 +27,7 @@ export default function storeReducer(store, action = {}) {
           contacts: newContacts
           
         }
-        case 'update_contacts':
-       
+     
     default:
       throw Error('Unknown action.');
 
