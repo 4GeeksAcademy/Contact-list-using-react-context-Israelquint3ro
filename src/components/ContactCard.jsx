@@ -17,19 +17,19 @@ export const ContactCard = ({ contact }) => {
           
         }
     return (
-        <div className="" key={contact.id}>
-            <div className="mx-auto card ">
+        <div className="card mx-auto" key={contact.id}>
+            <div className=" contacts">
 
-                <div className="card-body contact">
+                <div className="">
                     <img
-                        className="imagen"
+                        className="imagen mt-1"
                         src={contact.photo || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbySPOVJMWqKXXDjw9zQLk4k7k7T2xDXjzsw&s"}
                         alt="CONTACT PHOTO"
                     />
 
                     <div className="info">
                         <h4>{contact.name}</h4>
-                        <p><i className="fa-solid fa-mobile"></i> Phone: {contact.phone}</p>
+                        <p><i className="fa-solid fa-mobile"></i> Phone: {contact.countryCode} {contact.phone}</p>
                         <p><i className="fa-solid fa-envelope"></i> Email: {contact.email}</p>
                         <p><i className="fa-solid fa-location-dot"></i> Address: {contact.address}</p>
                     </div>

@@ -13,6 +13,7 @@ export const Home = () => {
 
 		"name": "Israel Quintero",
 		"photo": 'https://img.freepik.com/premium-photo/smiling-cartoon-illustration-black-man_1282444-264454.jpg',
+		"countyCode":"+1",
 		"phone": "155398768",
 		"email": "israelquint3ro@atx.de",
 		"address": "Schlostr. 6 80593 Reichertshausen",
@@ -28,7 +29,7 @@ export const Home = () => {
 		<div className="text-center homepage">
 			<h1>Contact List</h1>
 			<h3>Here you can edit or delete your current contacts</h3>
-			<div className="contacts text-dark">
+			<div className="contacts text-dark mt-3">
 
 				{store.contacts.map(contact => {
 					return (<div key={contact.id} >
