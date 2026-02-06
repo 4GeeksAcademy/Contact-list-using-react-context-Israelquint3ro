@@ -36,32 +36,33 @@ export const FormNewContact = ()=> {
 
 
     return(
-<div>
-  <form onSubmit={handleSubmit}>
+<div className="newContact text-center">
+  <form className="text-center"onSubmit={handleSubmit}>
     <h1>Create new contact</h1>
-         <Link to="/"> <button className="btn btn-success"><i className="fa-solid fa-arrow-left"></i> Go back to contact List</button></Link>
 
     <p>Please fill the following fields to add your contact</p>
-      <div className=" mb-3">
-        <label htmlFor="floatingInput">Name</label>
+             <Link to="/"> <button className="btn button-55 "><i className="fa-solid fa-arrow-left"></i> Go back to contact List</button></Link>
 
-        <input type="text" className="form-control" id="Name" name="name" value={newContact.name} onChange={handelInputchange}/>
+      <div className=" mb-3">
+        <label htmlFor="floatingInput">Full Name</label>
+
+        <input type="text" className="form-control" id="Name" name="name" value={newContact.name} onChange={handelInputchange} required/>
       </div>
       <div className="form">
                 <label htmlFor="floatingPassword">Phone</label>
 
-        <input type="text" className="form-control" id="Phone" name="phone" value={newContact.phone} onChange={handelInputchange}/>
+        <input type="text" className="form-control" id="Phone" name="phone" value={newContact.phone} onChange={handelInputchange} required/>
       </div>
       <div className="form">
                 <label htmlFor="floatingPassword">Email</label>
 
-        <input type="text" className="form-control" id="Email" name="email" value={newContact.email} onChange={handelInputchange} />
+        <input type="text" className="form-control" id="Email" name="email" value={newContact.email} onChange={handelInputchange} required />
       </div>
          <div className="form">
                   <label htmlFor="floatingPassword">Address</label>
 
-        <input type="text" className="form-control" id="Address" name="address" value={newContact.address} onChange={handelInputchange} />
-      <button className="btn btn-success" >Create new contact</button>
+        <input type="text" className="form-control" id="Address" name="address" value={newContact.address} onChange={handelInputchange} required/>
+      <button className="btn button-54 mt-3" >Create new contact</button>
       </div>
       </form>
 </div>

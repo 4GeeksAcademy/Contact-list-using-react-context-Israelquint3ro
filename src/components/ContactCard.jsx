@@ -17,13 +17,13 @@ export const ContactCard = ({ contact }) => {
           
         }
     return (
-        <div key={contact.id}>
-            <div className="mx-auto card">
+        <div className="" key={contact.id}>
+            <div className="mx-auto card ">
 
                 <div className="card-body contact">
                     <img
                         className="imagen"
-                        src={contact.photo || "https://img.freepik.com/premium-photo/smiling-cartoon-illustration-black-man_1282444-264454.jpg"}
+                        src={contact.photo || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbySPOVJMWqKXXDjw9zQLk4k7k7T2xDXjzsw&s"}
                         alt="CONTACT PHOTO"
                     />
 
@@ -34,12 +34,11 @@ export const ContactCard = ({ contact }) => {
                         <p><i className="fa-solid fa-location-dot"></i> Address: {contact.address}</p>
                     </div>
                 </div>
-
+            
                 <div className="botons">
 
                    <Link to={`/formular/${contact.id}`}><button className="btn" ><i className="fa-solid fa-pen-to-square"></i>
                     </button> </Link>
-
 
                     <button
                         className="btn"

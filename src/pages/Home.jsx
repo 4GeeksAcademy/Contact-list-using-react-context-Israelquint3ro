@@ -25,7 +25,7 @@ export const Home = () => {
 
 
 	return (
-		<div className="text-center container">
+		<div className="text-center homepage">
 			<h1>Contact List</h1>
 			<h3>Here you can edit or delete your current contacts</h3>
 			<div className="contacts text-dark">
@@ -39,7 +39,7 @@ export const Home = () => {
 				}
 			</div>
 			{/* onClick={() => createContact(dispatch, contact)} */}
-		<Link to="formnewcontact"><button className="btn btn-primary mt-3" >Create contact</button></Link>
+		<Link to="formnewcontact"><button className="btn  button-54 mt-3" >Create contact</button></Link>
 
 		</div>
 	);
